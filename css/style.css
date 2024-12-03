@@ -1,0 +1,28 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    text-align: center;
+}
+
+header > a
+{
+    padding: 2vh 3vw;
+    text-decoration: none;
+    color: red;
+}
+
+.text
+{
+    text-align: center;
+    padding-top: 10vh;
+}
