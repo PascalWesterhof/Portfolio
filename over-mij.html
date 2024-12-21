@@ -5,8 +5,79 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Pascal Westerhof</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/overmij.css">
     </head>
     <body>
-        
+        <header>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="over-mij.html">Over mij</a>
+            <a href="scripts/logout.php">Log uit</a>
+        </header>
+        <main>
+            <h1>Over mij</h1>
+            <body>
+                <div class="faq-container">
+                  <div class="faq-item">
+                    <div class="faq-header" onclick="toggleDropdown(this)">
+                      Algemeen
+                      <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-content">
+                      <p>Mijn naam is Pascal Westerhof, ik ben 20 jaar oud en ik studeer Informatica op het NHL Stenden.</p>
+                    </div>
+                  </div>
+                  <div class="faq-item">
+                    <div class="faq-header" onclick="toggleDropdown(this)">
+                      Achtergrond
+                      <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-content">
+                      <p>Hiervoor heb ik de opleiding Expert IT Systems and Devices gedaan op het Drenthe College in Assen. 
+                        Dit is een MBO 4 opleiding waar je vooral bezig bent met IT beheer en servicedesk werkzaamheden.</p>
+                      <p>Ook heb ik een bijbaan als IT medewerker bij Healthcoin. 
+                        Ik hou mij vooral bezig met de servicedesk en het testen van apps. 
+                        Voordat ik hier kwam werken heb ik hier ook stage gelopen.</p>
+                    </div>
+                  </div>
+
+                    <div class="faq-item">
+                      <div class="faq-header" onclick="toggleDropdown(this)">
+                        Hobbies
+                        <span class="arrow">&#9660;</span>
+                      </div>
+                      <div class="faq-content">
+                        <p></p>
+                      </div>
+                    </div>
+
+                  <div class="faq-item">
+                      <div class="faq-header" onclick="toggleDropdown(this)">
+                      Hobbies
+                      <span class="arrow">&#9660;</span>
+                    </div>
+                    <div class="faq-content">
+                      <p></p>
+                    </div>
+                  </div>
+
+                  <script>
+                    function toggleDropdown(header) {
+                      const content = header.nextElementSibling;
+                      const isOpen = header.classList.contains('open');
+
+                      if (isOpen) {
+                          header.classList.remove('open');
+                          content.style.display = 'none';
+                      } else {
+                          header.classList.add('open');
+                          content.style.display = 'block';
+                      }
+                    }
+                  </script>
+        </main>
+        <footer>
+          <p>	&#169; Pascal Westerhof</p>
+      </footer>
     </body>
 </html>

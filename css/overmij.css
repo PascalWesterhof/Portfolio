@@ -1,0 +1,49 @@
+body {
+  color: #ffffff;
+  margin: 0;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ffffff;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.faq-header:hover {
+  color: #1e90ff;
+}
+
+.faq-content {
+  display: none;
+  padding: 10px 0;
+  color: #ccc;
+} 
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.faq-header.open .arrow {
+  transform: rotate(180deg);
+}
+
+h1
+{
+    text-align: center;
+    padding-top: 5rem;
+}
